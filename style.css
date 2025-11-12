@@ -156,6 +156,119 @@
               0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* =======================================
+
+      INICIA CSS PARA DIRECTORIO DE LOCALES
+
+========================================= */
+
+.catalogo-locales {
+  text-align: center;
+}
+
+.locales-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 30px;
+  text-align: left;
+}
+
+.locales-grid details {
+  border: 1px solid #c1b29e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.locales-grid summary {
+  background-color: #e2d7c5;
+  padding: 12px 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #555;
+  cursor: pointer;
+  list-style: none;
+}
+
+.locales-grid summary::-webkit-details-marker {
+  display: none;
+}
+
+.licales-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+.locales-lista li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e2d7c5;
+}
+
+.locales-lista li:last-child {
+  border-bottom: none;
+}
+
+.locales-lista li img{
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.local-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.local-info strong {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #333;
+}
+
+.local-info p {
+  font-size: 0.9em;
+  color: #666;
+  margin: 0;
+}
+
+.boton-local {
+  flex-shrink: 0; /* Evita que el boton se aplaste con el resto del contenido */
+  white-space: nowrap; /* NO BORRAR: sinó "Pagina Oficial" rompe las lineas */
+  text-decoration: none;
+  background-color: #d8c9b3;
+  border: 1px solid #c1b29e;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out; 
+}
+
+.boton-local:hover {
+  background-color: #e2d7c5;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* =======================================
+
+      TERMINA CSS PARA DIRECTORIO DE LOCALES
+
+========================================= */
+
+
 .footer-principal {
   background-color: #b19e86;
   padding: 20px 5%;
