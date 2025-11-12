@@ -8,3 +8,42 @@ document.querySelectorAll(".boton-menu").forEach((boton) => {
     }
   });
 });
+
+//Agregar animacion para la lista de locales
+
+document.querySelectorAll('.locales-grid details').forEach((detail) => {
+  const summary = detail.querySelector('summary');
+  const content = detail.querySelector('.details-content');
+
+  summary.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    if (detail.open) { 
+      const height = content.offsetHeight; //Si se cierra el panel, obtener la altura inicial
+      content.style.height = `${height}px`; //se define explicitamente y se anima a 0.
+
+      requestAnimationFrame(() => {
+        content.style.height = '0px';
+      });
+
+
+      content.addEventListener('transitionend', () => { // Termina la animación y se cierra el panel de "details"
+        detail.open = false;
+        content.style.height = null;
+      }, { once: true });
+
+
+    } else {
+      detail.open = true; //Si se abre el panel, se abre la etiqueta "details"
+      const height = content.offsetHeight; //Saca la altura de todo el contenido
+
+      content.style.height = '0px'; //Inicia la altura en 0 y lo anima hasta la altura total.
+      requestAnimationFrame(() => {
+        content.style.height = `${height}px`;
+      });
+      content.addEventListener('transitionend', () => {
+        content.style.height = null; // IMPORTANT: Clean up the style
+      }, { once: true });
+    }
+  });
+});

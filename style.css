@@ -194,6 +194,11 @@
   display: none;
 }
 
+.details-content {
+  overflow: hidden;
+  transition: height 0.35s ease-out;
+}
+
 .locales-lista {
   list-style: none;
   padding: 0;
@@ -207,6 +212,12 @@
   gap: 20px;
   padding: 15px 20px;
   border-bottom: 1px solid #e2d7c5;
+  transition: all 0.2s ease-in-out;
+}
+
+.locales-lista li:hover {
+  background-color: #f9f9f9;
+  transform: translatex(10px);
 }
 
 .locales-lista li:last-child {
