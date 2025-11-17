@@ -7,32 +7,22 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&family=Funnel+Display:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Funnel+Display:wght@400;700&display=swap"/>
   </head>
 
   <body class="body-general">
     <header class="header-principal">
       <div class="logo-contenedor">
-        <img
-          src="Imagenes/Lilabasto_logo.jpeg"
-          alt="Lil Abasto Logo"
-          class="logo-imagen"
-        />
+        <img src="Imagenes/Lilabasto_logo.jpeg" alt="Lil Abasto Logo" class="logo-imagen"/>
         <span class="logo-texto">Lil' Abasto</span>
       </div>
     </header>
 
     <!-- NavBar -->
-
     <nav id="NavBar">
       <div class="opciones-menu">
         <button class="boton-menu" data-seccion="novedades">Novedades</button>
-        <button class="boton-menu" data-seccion="promociones">
-          Promociones
-        </button>
+        <button class="boton-menu" data-seccion="promociones">Promociones</button>
         <button class="boton-menu" data-seccion="mapa">Mapa</button>
         <button class="boton-menu" data-seccion="locales">Locales</button>
         <button class="boton-menu" data-seccion="servicios">Servicios</button>
@@ -43,31 +33,26 @@
     </nav>
 
     <!-- Cajas de fotos -->
-
     <main class="main-contenido">
       <div class="contenedor-fotos">
         <div class="caja-foto">
-          <img
-            src="Imagenes/abasto_1.png"
-            alt="Vista del flamante patio de comidas"
-          />
+          <img src="Imagenes/abasto_1.png" alt="Vista del flamante patio de comidas"/>
         </div>
         <div class="caja-foto">
-          <img
-            src="Imagenes/abasto_2.png"
-            alt="Vista de uno de los pasillos con negocios del shopping."
-          />
+          <img src="Imagenes/abasto_2.png" alt="Vista de uno de los pasillos con negocios del shopping."/>
         </div>
       </div>
 
       <!-- Caja descripción -->
-
-      <div class="caja-descripcion">DESCRIPCIÓN</div>
+      <div class="caja-descripcion">
+        <p>
+          Ubicado en el corazón de Buenos Aires, Lil' Abasto combina la rica historia del tango con la modernidad de la vida urbana. Ofrecemos una experiencia de compras única, gastronomía de primer nivel y entretenimiento para toda la familia en un ambiente vibrante y acogedor.
+        </p>
+      </div>
 
       <!-- Novedades -->
-
-      <div>
-        <h2 class="titulo-seccion" id="novedades">NOVEDADES</h2>
+      <section id="novedades">
+        <h2 class="titulo-seccion">NOVEDADES</h2>
         <div class="contenedor-novedades">
           <div class="caja-novedad">
             <img src="novedad1" alt="Imagen de novedad 1" />
@@ -80,225 +65,100 @@
             <img src="novedad2" alt="Imagen de novedad 2" />
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Promociones -->
-
-      <div>
-        <h2 class="titulo-seccion" id="promociones">PROMOCIONES</h2>
+      <section id="promociones">
+        <h2 class="titulo-seccion">PROMOCIONES</h2>
         <div class="contenedor-promociones">
           <div class="caja-promocion">
-            <img src="banco1" alt="Logo del banco 1" />
+            <img src="Imagenes/logo_banco1.png" alt="Logo del banco 1" />
             <h3>30% OFF</h3>
             <p>Los miercoles en productos de Tecnologia</p>
           </div>
           <div class="caja-promocion">
-            <img src="banco2" alt="Logo del banco 2" />
+            <img src="Imagenes/logo_banco2.png" alt="Logo del banco 2" />
             <h3>3x2</h3>
             <p>De lunes a viernes en Indumentaria</p>
           </div>
           <div class="caja-promocion">
-            <img src="banco3" alt="Logo del banco 3" />
+            <img src="Imagenes/logo_banco3.jpeg" alt="Logo del banco 3" />
             <h3>15% OFF</h3>
             <p>Sabados, domingos y feriados en Comercios seleccionados</p>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- Mapa del Centro Comercial -->
-
-      <div>
-        <h2 class="titulo-seccion" id="mapa">MAPA DEL CENTRO COMERCIAL</h2>
+      <section id="mapa">
+        <h2 class="titulo-seccion">MAPA DEL CENTRO COMERCIAL</h2>
         <div class="contenedor-mapa">
           <nav>
             <ul class="lista-mapa">
-              <li><span id="boton-subsuelo">Subsuelo</span></li>
-              <li><span id="boton-plantabaja">Planta Baja</span></li>
-              <li><span id="boton-primerpiso">Primer Piso</span></li>
+              <li><button id="boton-subsuelo">Subsuelo</button></li>
+              <li><button id="boton-plantabaja">Planta Baja</button></li>
+              <li><button id="boton-primerpiso">Primer Piso</button></li>
             </ul>
           </nav>
           <div class="caja-mapa">
             <img id="img-subsuelo" src="subsuelo" alt="Imagen del Subsuelo" />
-            <img
-              id="img-plantabaja"
-              src="plantabaja"
-              alt="Imagen de la Planta Baja"
-            />
-            <img
-              id="img-primerpiso"
-              src="pisouno"
-              alt="Imagen del Primer Piso"
-            />
+            <img id="img-plantabaja" src="plantabaja" alt="Imagen de la Planta Baja"/>
+            <img id="img-primerpiso" src="pisouno" alt="Imagen del Primer Piso"/>
           </div>
-        </div>
-      </div>
-
-      <!-- Locales -->
-
-      <section class="catalogo-locales" id="locales">
-        <h2 class="titulo-seccion">LOCALES</h2>
-        <p>Hacé click en un piso para ver los locales disponibles</p>
-        <div class="locales-grid">
-          <!-- Planta baja -->
-
-          <details>
-            <summary>Planta Baja</summary>
-            <div class="details-content">
-              <ul class="locales-lista">
-                <li>
-                  <img src="Imagenes/adidas_logo.jpg" alt="Logo de Adidas" />
-                  <div class="local-info">
-                    <strong>Adidas</strong>
-                    <p>Planta Baja - Local 130</p>
-                  </div>
-                  <a
-                    href="https://www.adidas.com.ar/"
-                    class="boton-local"
-                    target="_blank"
-                    >Página Oficial</a
-                  >
-                </li>
-
-                <li>
-                  <img src="Imagenes/Logo-US.png" alt="Logo de Urban Style" />
-                  <div class="local-info">
-                    <strong>Urban Style</strong>
-                    <p>Planta Baja - Local 145</p>
-                  </div>
-                  <a
-                    href="https://fedesorii.github.io/DyDW-TP-UrbanStyle/"
-                    class="boton-local"
-                    target="_blank"
-                    >Página Oficial</a
-                  >
-                </li>
-
-                <li>
-                  <img src="Imagenes/dexter_logo.jpg" alt="Logo de Dexter" />
-                  <div class="local-info">
-                    <strong>Dexter</strong>
-                    <p>Planta Baja - Local 112</p>
-                  </div>
-                  <a
-                    href="https://dexter.com.ar/"
-                    class="boton-local"
-                    target="_blank"
-                    >Página Oficial</a
-                  >
-                </li>
-
-                <li>
-                  <img
-                    src="Imagenes/columbia_logo.png"
-                    alt="Logo de Columbia"
-                  />
-                  <div class="local-info">
-                    <strong>Columbia Sportswear</strong>
-                    <p>Planta Baja - Local 127</p>
-                  </div>
-                  <a
-                    href="https://www.columbiasportswear.com.ar/"
-                    class="boton-local"
-                    target="_blank"
-                    >Página Oficial</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </details>
-
-          <!-- Primer piso -->
-
-          <details>
-            <summary>Primer Piso</summary>
-            <div class="details-content">
-              <ul class="locales-lista">
-                <li>
-                  <img
-                    src="Imagenes/FundaLab_Logo.jpg"
-                    alt="Logo de FundaLab"
-                  />
-                  <div class="local-info">
-                    <strong>FundaLab</strong>
-                    <p>Primer Piso - Local 216</p>
-                  </div>
-                  <a
-                    href="https://eitangrod.github.io/Local-comercial/"
-                    class="boton-local"
-                    target="_blank"
-                    >Página Oficial</a
-                  >
-                </li>
-
-                <li>
-                  <img src="Imagenes/Timora_Logo.jpg" alt="Logo de Timora" />
-                  <div class="local-info">
-                    <strong>Timora</strong>
-                    <p>Primer Piso - Local 268</p>
-                  </div>
-                  <a
-                    href="https://dsket.github.io/Timora/index.html"
-                    class="boton-local"
-                    target="_blank"
-                    >Página Oficial</a
-                  >
-                </li>
-
-                <li>
-                  <img
-                    src="Imagenes/Foto-Grafia_Logo.jpg"
-                    alt="Logo de Foto-Grafia"
-                  />
-                  <div class="local-info">
-                    <strong>Foto-Grafia</strong>
-                    <p>Primer Piso - Local 231</p>
-                  </div>
-                  <a
-                    href="https://awpii.github.io/WebDesign_UADE/"
-                    class="boton-local"
-                    target="_blank"
-                    >Página Oficial</a
-                  >
-                </li>
-
-                <li>
-                  <img
-                    src="Imagenes/TecnoGReal_Logo2.jpg"
-                    alt="Logo de Tecno G Real"
-                  />
-                  <div class="local-info">
-                    <strong>Tecno G Real</strong>
-                    <p>Primer Piso - Local 247</p>
-                  </div>
-                  <a
-                    href="http://manugallina014.github.io/TPparcialDise-oWeb/"
-                    class="boton-local"
-                    target="_blank"
-                    >Página Oficial</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </details>
         </div>
       </section>
 
-      <div>
-        <h2 class="titulo-seccion" id="servicios">SERVICIOS</h2>
-        <div class="contenedor-servicios">
-          <div class="caja-servicio">SERVICIO 1</div>
-          <div class="caja-servicio">SERVICIO 2</div>
-          <div class="caja-servicio">SERVICIO 3</div>
+      <!-- Locales -->
+      <section class="catalogo-locales" id="locales">
+        <h2 class="titulo-seccion">LOCALES</h2>
+        <div class="locales-grid">
+          <div class="piso-contenedor">
+            <h3 class="piso-titulo">Planta Baja</h3>
+            <ul class="locales-lista">
+              <li><img src="Imagenes/adidas_logo.jpg" alt="Logo de Adidas" /><div class="local-info"><strong>Adidas</strong><p>Planta Baja - Local 130</p></div><a href="https://www.adidas.com.ar/" class="boton-local" target="_blank">Página Oficial</a></li>
+              <li><img src="Imagenes/Logo-US.png" alt="Logo de Urban Style" /><div class="local-info"><strong>Urban Style</strong><p>Planta Baja - Local 145</p></div><a href="https://fedesorii.github.io/DyDW-TP-UrbanStyle/" class="boton-local" target="_blank">Página Oficial</a></li>
+              <li><img src="Imagenes/dexter_logo.jpg" alt="Logo de Dexter" /><div class="local-info"><strong>Dexter</strong><p>Planta Baja - Local 112</p></div><a href="https://dexter.com.ar/" class="boton-local" target="_blank">Página Oficial</a></li>
+              <li><img src="Imagenes/columbia_logo.png" alt="Logo de Columbia" /><div class="local-info"><strong>Columbia Sportswear</strong><p>Planta Baja - Local 127</p></div><a href="https://www.columbiasportswear.com.ar/" class="boton-local" target="_blank">Página Oficial</a></li>
+            </ul>
+          </div>
+          <div class="piso-contenedor">
+            <h3 class="piso-titulo">Primer Piso</h3>
+            <ul class="locales-lista">
+              <li><img src="Imagenes/FundaLab_Logo.jpg" alt="Logo de FundaLab"/><div class="local-info"><strong>FundaLab</strong><p>Primer Piso - Local 216</p></div><a href="https://eitangrod.github.io/Local-comercial/" class="boton-local" target="_blank">Página Oficial</a></li>
+              <li><img src="Imagenes/Timora_Logo.jpg" alt="Logo de Timora"/><div class="local-info"><strong>Timora</strong><p>Primer Piso - Local 268</p></div><a href="https://dsket.github.io/Timora/index.html" class="boton-local" target="_blank">Página Oficial</a></li>
+              <li><img src="Imagenes/Foto-Grafia_Logo.jpg" alt="Logo de Foto-Grafia"/><div class="local-info"><strong>Foto-Grafia</strong><p>Primer Piso - Local 231</p></div><a href="https://awpii.github.io/WebDesign_UADE/" class="boton-local" target="_blank">Página Oficial</a></li>
+              <li><img src="Imagenes/TecnoGReal_Logo2.jpg" alt="Logo de Tecno G Real"/><div class="local-info"><strong>Tecno G Real</strong><p>Primer Piso - Local 247</p></div><a href="http://manugallina014.github.io/TPparcialDise-oWeb/" class="boton-local" target="_blank">Página Oficial</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <!-- Servicios -->
+      <section id="servicios">
+        <h2 class="titulo-seccion">SERVICIOS</h2>
+        <div class="contenedor-servicios">
+          <div class="caja-servicio">
+            <h3>Estacionamiento</h3>
+            <p>Contamos con más de 1200 cocheras cubiertas. Las primeras 2 horas son sin cargo presentando tu ticket de compra.</p>
+          </div>
+          <div class="caja-servicio">
+            <h3>Baños y Sala Familiar</h3>
+            <p>Baños accesibles en todos los pisos y una sala de lactancia y cambiadores para tu comodidad.</p>
+          </div>
+          <div class="caja-servicio">
+            <h3>Patio de Comidas</h3>
+            <p>Una amplia variedad de opciones gastronómicas para todos los gustos en nuestro renovado patio de comidas.</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
-
     <footer class="footer-principal">
       <div class="info-izquierda">
-        <p>Dirección / Teléfonos</p>
-        <p>Horarios</p>
+        <p>Av. Corrientes 3247, CABA</p>
+        <p>Tel: +54 11 4959-3400</p>
+        <p>Lunes a Domingos de 10:00 a 22:00 hs.</p>
         <p class="derechos-reservados">Todos los derechos reservados</p>
       </div>
       <div class="info-derecha">
