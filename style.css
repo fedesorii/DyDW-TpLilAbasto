@@ -400,6 +400,30 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
 }
 
+
+/* =======================================
+
+      EFECTO DE NAVIDAD
+
+========================================= */
+
+@keyframes christmasGlow {
+  0%, 100% {
+    box-shadow: 0 8px 25px -5px rgba(255, 0, 0, 0.8);
+  }
+  33% {
+    box-shadow: 0 8px 25px -5px rgba(0, 255, 0, 0.8);
+  }
+  66% {
+    box-shadow: 0 8px 25px -5px rgba(100, 150, 255, 0.8);
+  }
+}
+
+#novedad-navidad:hover {
+  transform: translateY(-5px);
+  animation: christmasGlow 2s infinite steps(1, end);
+}
+
 /* =======================================
 
       TERMINA CSS PARA DIRECTORIO DE LOCALES
