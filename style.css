@@ -301,6 +301,46 @@
   margin: 0;
   margin-top: 10px;
 }
+/*mapa */
+.contenedor-mapa {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 20px;
+  margin-top: 20px;
+}
+.lista-mapa {
+  list-style-type: none; 
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 15px; 
+}
+.lista-mapa li button {
+  background-color: #d8c9b3;
+  border: 1px solid #a38d7a;
+  border-radius: 20px;
+  padding: 8px 25px;
+  font-size: 1em;
+  cursor: pointer;
+  color: #333;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+  outline: none;
+  font-family: inherit;
+}
+.lista-mapa li button:hover {
+  background-color: #e2d7c5;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+.caja-mapa {
+  position: relative;
+  align-items: center;
+  width: 90%; 
+  max-width: 800px;
+  min-height: 500px; 
+}
 
 /* =======================================
 
@@ -528,4 +568,21 @@
   .info-derecha {
     text-align: center;
   }
+  .contenedor-mapa {
+    width: 100%;
+    padding: 0 10px; 
+}
+
+.lista-mapa {
+  flex-direction: column; 
+  width: 80%; 
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.caja-mapa {
+  width: 95%;
+  min-height: 350px; 
+  margin-top: 20px;
+}
 }
