@@ -42,8 +42,32 @@ document.querySelectorAll('.locales-grid details').forEach((detail) => {
         content.style.height = `${height}px`;
       });
       content.addEventListener('transitionend', () => {
-        content.style.height = null; // IMPORTANT: Clean up the style
+        content.style.height = null;
       }, { once: true });
     }
+  });
+});
+
+//Funcionalidad de la localizacion de los locales en el mapa
+
+document.addEventListener('DOMContentLoaded', () => {
+  const localesEnLista = document.querySelectorAll('.locales-lista li[data-local]');
+
+  localesEnLista.forEach(local => {
+    local.addEventListener('mouseover', function() {
+      const localId = this.dataset.local;
+      const puntoEnMapa = document.getElementById(`punto-${localId}`);
+      if (puntoEnMapa) {
+        puntoEnMapa.classList.add('activo');
+      }
+    });
+
+    local.addEventListener('mouseout', function() {
+      const localId = this.dataset.local;
+      const puntoEnMapa = document.getElementById(`punto-${localId}`);
+      if (puntoEnMapa) {
+        puntoEnMapa.classList.remove('activo');
+      }
+    });
   });
 });
