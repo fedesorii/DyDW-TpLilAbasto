@@ -51,22 +51,22 @@ document.querySelectorAll('.locales-grid details').forEach((detail) => {
 //Funcionalidad de la localizacion de los locales en el mapa
 
 document.addEventListener('DOMContentLoaded', () => {
-  const localesEnLista = document.querySelectorAll('.locales-lista li[data-local]');
+  const localesEnLista = document.querySelectorAll('.locales-lista li[data-local]'); // para todos los <li> en que tengan data-local en <locales-lista>
 
-  localesEnLista.forEach(local => {
-    local.addEventListener('mouseover', function() {
+  localesEnLista.forEach(local => { // sobre cada elemento
+    local.addEventListener('mouseover', function() { //cuando se hace hover con el mouse
       const localId = this.dataset.local;
-      const puntoEnMapa = document.getElementById(`punto-${localId}`);
+      const puntoEnMapa = document.getElementById(`punto-${localId}`); //se pone el puntito
       if (puntoEnMapa) {
-        puntoEnMapa.classList.add('activo');
+        puntoEnMapa.classList.add('activo'); //se da clase activo y le pone la animacion
       }
     });
 
-    local.addEventListener('mouseout', function() {
+    local.addEventListener('mouseout', function() { // al revés, evento cuando no está el hoer
       const localId = this.dataset.local;
       const puntoEnMapa = document.getElementById(`punto-${localId}`);
       if (puntoEnMapa) {
-        puntoEnMapa.classList.remove('activo');
+        puntoEnMapa.classList.remove('activo'); //se saca el activo para que no se muestre
       }
     });
   });

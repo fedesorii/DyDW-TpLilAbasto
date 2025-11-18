@@ -21,8 +21,8 @@
     <!-- NavBar -->
     <nav id="NavBar">
       <div class="opciones-menu">
-        <button class="boton-menu" data-seccion="novedades">Novedades</button>
-        <button class="boton-menu" data-seccion="promociones">Promociones</button>
+        <button class="boton-menu" data-seccion="novedades">Novedades</button> <!-- Estos data-seccion son para que el js encuentre por ID y haga scroll suave-->
+        <button class="boton-menu" data-seccion="promociones">Promociones</button> <!-- asi no parece que hacemos una teleportacion corte DBZ-->
         <button class="boton-menu" data-seccion="mapa">Mapa</button>
         <button class="boton-menu" data-seccion="locales">Locales</button>
         <button class="boton-menu" data-seccion="servicios">Servicios</button>
@@ -95,10 +95,10 @@
         <div class="contenedor-mapa-interactivo">
         <input type="radio" name="mapa-piso" id="mapa-subsuelo-radio" />
         <input type="radio" name="mapa-piso" id="mapa-plantabaja-radio" checked />
-        <input type="radio" name="mapa-piso" id="mapa-primerpiso-radio" />
+        <input type="radio" name="mapa-piso" id="mapa-primerpiso-radio" /> <!-- Estos radios tienen el mismo name para que solo uno se pueda seleccionar y son ocultos-->
         <nav class="navegacion-mapa">
           <ul class="lista-mapa">
-            <li><label for="mapa-subsuelo-radio" class="boton-mapa">Subsuelo</label></li>
+            <li><label for="mapa-subsuelo-radio" class="boton-mapa">Subsuelo</label></li> <!-- estos botones reales son labels conectadas a los radios con un for-->
             <li><label for="mapa-plantabaja-radio" class="boton-mapa">Planta Baja</label></li>
             <li><label for="mapa-primerpiso-radio" class="boton-mapa">Primer Piso</label></li>
           </ul>
@@ -107,7 +107,7 @@
           <div class="caja-mapa">
             <div id="mapa-plantabaja-contenedor" class="mapa-piso">
               <img id="img-plantabaja" class="mapa-imagen" src="Imagenes/plantabaja.jpeg" alt="Imagen de la Planta Baja" />
-              <span class="punto-destacado" id="punto-adidas" style="top: 40%; left: 15%;"></span>
+              <span class="punto-destacado" id="punto-adidas" style="top: 40%; left: 15%;"></span> <!-- estos span son cada local del mapa y se posicionan con "absolute" en el css-->
               <span class="punto-destacado" id="punto-urbanstyle" style="top: 40%; left: 60%;"></span>
               <span class="punto-destacado" id="punto-dexter" style="top: 75%; left: 35%;"></span>
               <span class="punto-destacado" id="punto-columbia" style="top: 40%; left: 82%;"></span>
@@ -135,25 +135,44 @@
           <div class="piso-contenedor">
             <h3 class="piso-titulo">Planta Baja</h3>
             <ul class="locales-lista">
-              <li data-local="adidas">
+              <li data-local="adidas"> <!-- Estos "data-local" los usa el js para saber que local conectar con que punto en el mapa-->
                 <img src="Imagenes/adidas_logo.jpg" alt="Logo de Adidas" />
-                <div class="local-info"><strong>Adidas</strong><p>Planta Baja - Local 130</p></div>
+                <div class="local-info">
+                  <strong>Adidas</strong>
+                  <p>Planta Baja - Local 130</p>
+                </div>
                 <a href="https://www.adidas.com.ar/" class="boton-local" target="_blank">Página Oficial</a>
               </li>
               <li data-local="urbanstyle">
                 <img src="Imagenes/Logo-US.png" alt="Logo de Urban Style" />
-                <div class="local-info"><strong>Urban Style</strong><p>Planta Baja - Local 145</p></div>
+                <div class="local-info">
+                  <strong>Urban Style</strong>
+                  <p>Planta Baja - Local 145</p>
+                </div>
                 <a href="https://fedesorii.github.io/DyDW-TP-UrbanStyle/" class="boton-local" target="_blank">Página Oficial</a>
               </li>
-              <li data-local="dexter"><img src="Imagenes/dexter_logo.jpg" alt="Logo de Dexter" /><div class="local-info"><strong>Dexter</strong><p>Planta Baja - Local 112</p></div><a href="https://dexter.com.ar/" class="boton-local" target="_blank">Página Oficial</a></li>
+              <li data-local="dexter">
+                <img src="Imagenes/dexter_logo.jpg" alt="Logo de Dexter" />
+                <div class="local-info">
+                  <strong>Dexter</strong>
+                  <p>Planta Baja - Local 112</p>
+                </div>
+                <a href="https://dexter.com.ar/" class="boton-local" target="_blank">Página Oficial</a>
+              </li>
               <li data-local="columbia">
                 <img src="Imagenes/columbia_logo.png" alt="Logo de Columbia" />
-                <div class="local-info"><strong>Columbia Sportswear</strong><p>Planta Baja - Local 127</p></div>
+                <div class="local-info">
+                  <strong>Columbia Sportswear</strong>
+                  <p>Planta Baja - Local 127</p>
+                </div>
                 <a href="https://www.columbiasportswear.com.ar/" class="boton-local" target="_blank">Página Oficial</a>
               </li>
               <li data-local="northface">
                 <img src="Imagenes/northface_logo.png" alt="Logo de The North Face" />
-                <div class="local-info"><strong>The Northface</strong><p>Planta Baja - Local 102</p></div>
+                <div class="local-info">
+                  <strong>The Northface</strong>
+                  <p>Planta Baja - Local 102</p>
+                </div>
                 <a href="https://www.thenorthface.com.ar" class="boton-local" target="_blank">Página Oficial</a>
               </li>
             </ul>
@@ -163,27 +182,42 @@
             <ul class="locales-lista">
               <li data-local="fravega">
                 <img src="Imagenes/fravega_logo.jpg" alt="Logo de Fravega"/>
-                <div class="local-info"><strong>Fravega</strong><p>Primer Piso - Local 201</p></div>
+                <div class="local-info">
+                  <strong>Fravega</strong>
+                  <p>Primer Piso - Local 201</p>
+                </div>
                 <a href="https://www.fravega.com" class="boton-local" target="_blank">Página Oficial</a>
               </li>
               <li data-local="fundalab">
                 <img src="Imagenes/FundaLab_Logo.jpg" alt="Logo de FundaLab"/>
-                <div class="local-info"><strong>FundaLab</strong><p>Primer Piso - Local 216</p></div>
+                <div class="local-info">
+                  <strong>FundaLab</strong>
+                  <p>Primer Piso - Local 216</p>
+                </div>
                 <a href="https://eitangrod.github.io/Local-comercial/" class="boton-local" target="_blank">Página Oficial</a>
               </li>
               <li data-local="timora">
                 <img src="Imagenes/Timora_Logo.jpg" alt="Logo de Timora"/>
-                <div class="local-info"><strong>Timora</strong><p>Primer Piso - Local 268</p></div>
+                <div class="local-info">
+                  <strong>Timora</strong>
+                  <p>Primer Piso - Local 268</p>
+                </div>
                 <a href="https://dsket.github.io/Timora/index.html" class="boton-local" target="_blank">Página Oficial</a>
               </li>
               <li data-local="fotografia">
                 <img src="Imagenes/Foto-Grafia_Logo.jpg" alt="Logo de Foto-Grafia"/>
-                <div class="local-info"><strong>Foto-Grafia</strong><p>Primer Piso - Local 231</p></div>
+                <div class="local-info">
+                  <strong>Foto-Grafia</strong>
+                  <p>Primer Piso - Local 231</p>
+                </div>
                 <a href="https://awpii.github.io/WebDesign_UADE/" class="boton-local" target="_blank">Página Oficial</a>
               </li>
               <li data-local="tecnogreal">
                 <img src="Imagenes/TecnoGReal_Logo2.jpg" alt="Logo de Tecno G Real"/>
-                <div class="local-info"><strong>Tecno G Real</strong><p>Primer Piso - Local 247</p></div>
+                <div class="local-info">
+                  <strong>Tecno G Real</strong>
+                  <p>Primer Piso - Local 247</p>
+                </div>
                 <a href="http://manugallina014.github.io/TPparcialDise-oWeb/" class="boton-local" target="_blank">Página Oficial</a>
               </li>
             </ul>

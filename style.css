@@ -1,3 +1,6 @@
+/* ===================================================================
+                  1. ESTILOS GENERALES Y FUENTES
+=================================================================== */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -12,6 +15,21 @@
   min-height: 100vh;
 }
 
+.main-contenido {
+  flex-grow: 1;
+  padding: 30px 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.titulo-seccion {
+  text-align: center;
+}
+
+/* ===================================================================
+                      2. HEADER Y LOGO
+=================================================================== */
 .header-principal {
   background-color: #b19e86;
   padding: 15px 5%;
@@ -56,6 +74,10 @@
   background-color: #585858;
 }
 
+
+/* ===================================================================
+                  3. BARRA DE NAVEGACIÓN (NAVBAR)
+=================================================================== */
 #NavBar {
   background-color: #b19e86;
   padding: 10px 5%;
@@ -82,7 +104,6 @@
   cursor: pointer;
   color: #333;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, border-color 0.3s;
   transition: all 0.2s ease-in-out;
   outline: none;
 }
@@ -106,14 +127,9 @@
   cursor: pointer;
 }
 
-.main-contenido {
-  flex-grow: 1;
-  padding: 30px 5%;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
+/* ===================================================================
+    4. SECCIONES PRINCIPALES (FOTOS, DESCRIPCIÓN, NOVEDADES, ETC.)
+=================================================================== */
 .contenedor-fotos {
   display: flex;
   justify-content: center;
@@ -125,7 +141,7 @@
   background-color: #d8c9b3;
   border: 1px solid #a38d7a;
   border-radius: 10px;
-  flex: 1 1 48%;
+  flex: 1 1 48%; /* flex-grow, flex-shrink, flex-basis para que las cajas crezcan pero se apilen si no hay espacio */
   max-width: 600px;
   overflow: hidden;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 
@@ -150,10 +166,6 @@
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-#novedades, #promociones, #mapa, #servicios, .catalogo-locales {
-  text-align: center;
-}
-
 .contenedor-novedades,
 .contenedor-promociones,
 .contenedor-servicios {
@@ -164,100 +176,8 @@
   margin-top: 20px;
 }
 
-.caja-novedad {
-  background-color: #ffffff;
-  border: 1px solid #d8c9b3;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-  padding: 20px;
-  text-align: center;
-  flex: 1 1 30%;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.caja-novedad:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-
-.caja-novedad img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.caja-novedad h3 {
-  font-size: 1.3em;
-  font-weight: 700;
-  color: #333;
-  margin: 0;
-}
-
-.caja-novedad p {
-  color: #666;
-  font-size: 0.9em;
-  line-height: 1.4;
-  flex-grow: 1;
-  margin: 0;
-}
-
-.caja-promocion {
-  background-color: #ffffff;
-  border: 1px solid #d8c9b3;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
-  padding: 20px;
-  text-align: center;
-  flex: 1 1 30%;
-  max-width: 350px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-
-.caja-promocion:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
-}
-
-.caja-promocion img {
-  width: 100%;
-  height: 120px;
-  object-fit: contain;
-  margin-bottom: 10px;
-}
-
-.caja-promocion h3 {
-  font-size: 1.3em;
-  font-weight: 700;
-  color: #333;
-  margin: 0;
-}
-
-.caja-promocion p {
-  color: #666;
-  font-size: 0.9em;
-  line-height: 1.4;
-  flex-grow: 1;
-  margin: 0;
-}
-
-
-.contenedor-servicios {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
+.caja-novedad, 
+.caja-promocion, 
 .caja-servicio {
   background-color: #ffffff;
   border: 1px solid #d8c9b3;
@@ -265,7 +185,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
   padding: 20px;
   text-align: center;
-  flex: 1 1 30%;
+  flex: 1 1 30%; /* pone las tarjetas en filas de 3 */
   max-width: 350px;
   display: flex;
   flex-direction: column;
@@ -273,35 +193,50 @@
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
+.caja-novedad:hover, 
+.caja-promocion:hover, 
 .caja-servicio:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
-.caja-servicio img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 10px;
+.caja-novedad { 
+  max-width: 600px; 
 }
 
-.caja-servicio h3 {
+.caja-novedad img { 
+  height: 400px; 
+  object-fit: cover; 
+}
+
+.caja-promocion img { 
+  height: 120px; 
+  object-fit: contain; 
+}
+
+.caja-servicio img { 
+  height: 220px; 
+  object-fit: cover; 
+}
+
+.caja-novedad h3, .caja-promocion h3, .caja-servicio h3 {
   font-size: 1.3em;
   font-weight: 700;
   color: #333;
   margin: 0;
 }
 
-.caja-servicio p {
+.caja-novedad p, .caja-promocion p, .caja-servicio p {
   color: #666;
   font-size: 0.9em;
   line-height: 1.4;
-  flex-grow: 1;
+  flex-grow: 1; /* para que el parrafo ocupe el espacio de sobra y desplace a los botones */
   margin: 0;
-  margin-top: 10px;
 }
-/*mapa */
+
+/* ===================================================================
+                    5. MAPA INTERACTIVO
+=================================================================== */
 .contenedor-mapa-interactivo {
   display: flex;
   flex-direction: column;
@@ -310,6 +245,7 @@
   margin-top: 20px;
 }
 
+/* Oculta los radio buttons que controlan la interactividad */
 .contenedor-mapa-interactivo input[type="radio"] {
   display: none;
 }
@@ -335,6 +271,8 @@
   display: inline-block;
 }
 
+/* logica del mapa en terminos de visibilidad, con los botones radio */
+/* el tilde elije "Hermanos". izquierda elije a derecha */
 #mapa-subsuelo-radio:checked ~ .caja-mapa #mapa-subsuelo-contenedor,
 #mapa-plantabaja-radio:checked ~ .caja-mapa #mapa-plantabaja-contenedor,
 #mapa-primerpiso-radio:checked ~ .caja-mapa #mapa-primerpiso-contenedor {
@@ -350,11 +288,11 @@
   width: 95%;
   max-width: 1400px;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  position: relative;
+  position: relative; /* CRUCIAL: para que los puntos se posicionen dentro de esta caja */
 }
 
 .mapa-piso {
-  display: none;
+  display: none; /* Oculta todos los contenedores de piso por defecto */
 }
 
 .caja-mapa:hover {
@@ -365,61 +303,39 @@
 .mapa-imagen {
   width: 100%;
   height: auto;
-  display: none;
   border-radius: 8px;
 }
 
-#mapa-subsuelo-radio:checked ~ .caja-mapa #img-subsuelo {
-  display: block;
-}
-#mapa-plantabaja-radio:checked ~ .caja-mapa #img-plantabaja {
-  display: block;
-}
-#mapa-primerpiso-radio:checked ~ .caja-mapa #img-primerpiso {
-  display: block;
-}
-
-@keyframes pulso {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(217, 83, 79, 0.7);
-  }
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(217, 83, 79, 0);
-  }
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(217, 83, 79, 0);
-  }
+@keyframes pulso { /* esta es la animación del puntito en el mapa */
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(217, 83, 79, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(217, 83, 79, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(217, 83, 79, 0); }
 }
 
 .punto-destacado {
-  position: absolute;
+  position: absolute; /* esto es para poder usar el top y left en las coordenadas del punto */
   width: 20px;
   height: 20px;
   background-color: #d9534f;
   border-radius: 50%;
   border: 2px solid white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  transform: translate(-50%, -50%);
-  opacity: 0;
+  transform: translate(-50%, -50%); /* esto hace que el punto esté centrado en la coordenada exacta del html que le di */
+  opacity: 0; /* hace que no se muestre el punto por defecto */
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.punto-destacado.activo {
+.punto-destacado.activo { /* esta es la clase para que el js agregue el punto en el mapa */
   opacity: 1;
   visibility: visible;
   animation: pulso 2s infinite;
 }
 
-/* =======================================
 
-      INICIA CSS PARA DIRECTORIO DE LOCALES
-
-========================================= */
-
+/* ===================================================================
+                    6. DIRECTORIO DE LOCALES
+=================================================================== */
 .locales-grid {
   display: flex;
   flex-direction: column;
@@ -469,27 +385,18 @@
   object-fit: contain;
   border: 1px solid #eee;
   border-radius: 4px;
-  flex-shrink: 0;
+  flex-shrink: 0; /* la imagen se achica sino */
 }
 
 .local-info {
-  flex-grow: 1;
+  flex-grow: 1; /* pa empujar los botones a la derecha */
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
 
-.local-info strong {
-  font-size: 1.1em;
-  font-weight: 700;
-  color: #333;
-}
-
-.local-info p {
-  font-size: 0.9em;
-  color: #666;
-  margin: 0;
-}
+.local-info strong { font-size: 1.1em; font-weight: 700; color: #333; }
+.local-info p { font-size: 0.9em; color: #666; margin: 0; }
 
 .boton-local {
   flex-shrink: 0;
@@ -513,35 +420,19 @@
 }
 
 
-/* =======================================
-
-      EFECTO DE NAVIDAD
-
-========================================= */
-
+/* ===================================================================
+                7. EFECTOS ESPECIALES Y FOOTER
+=================================================================== */
 @keyframes christmasGlow {
-  0%, 100% {
-    box-shadow: 0 8px 25px -5px rgba(255, 0, 0, 0.8);
-  }
-  33% {
-    box-shadow: 0 8px 25px -5px rgba(0, 255, 0, 0.8);
-  }
-  66% {
-    box-shadow: 0 8px 25px -5px rgba(100, 150, 255, 0.8);
-  }
+  0%, 100% { box-shadow: 0 8px 25px -5px rgba(255, 0, 0, 0.8); }
+  33% { box-shadow: 0 8px 25px -5px rgba(0, 255, 0, 0.8); }
+  66% { box-shadow: 0 8px 25px -5px rgba(100, 150, 255, 0.8); }
 }
 
 #novedad-navidad:hover {
   transform: translateY(-5px);
   animation: christmasGlow 2s infinite steps(1, end);
 }
-
-/* =======================================
-
-      TERMINA CSS PARA DIRECTORIO DE LOCALES
-
-========================================= */
-
 
 .footer-principal {
   background-color: #b19e86;
@@ -552,7 +443,7 @@
   color: #333;
   font-size: 0.9em;
   line-height: 1.5;
-  margin-top: auto;
+  margin-top: auto; /* pa que el footer se quede abajo si hay poco content */
 }
 
 .info-izquierda,
@@ -570,91 +461,38 @@
   font-size: 0.8em;
 }
 
+
+/* ===================================================================
+                          8. Responsive
+=================================================================== */
 @media (max-width: 768px) {
-  .header-principal {
-    padding: 10px 3%;
+  .header-principal, .nav-principal, .opciones-menu, .footer-principal, .contenedor-fotos {
     flex-direction: column;
     text-align: center;
   }
 
-  .logo-contenedor {
-    justify-content: center;
-    margin-bottom: 10px;
-  }
+  .logo-contenedor { justify-content: center; margin-bottom: 10px; }
+  .opciones-menu { gap: 10px; width: 100%; margin-bottom: 15px; }
+  .boton-menu { width: 100%; }
+  .buscador-contenedor { position: static; transform: none; margin-top: 10px; }
+  .main-contenido { padding: 20px 3%; }
+  .contenedor-fotos { gap: 20px; }
+  .caja-foto { width: 90%; height: 150px; }
+  .caja-descripcion { width: 90%; margin: 0 auto; min-height: 120px; }
+  .footer-principal { padding: 15px 3%; }
+  .info-izquierda, .info-derecha { align-items: center; margin-bottom: 10px; }
+  .info-derecha { text-align: center; }
 
-  .nav-principal {
-    flex-direction: column;
-    padding: 10px 3%;
-  }
-
-  .opciones-menu {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    margin-bottom: 15px;
-  }
-
-  .boton-menu {
-    width: 100%;
-  }
-
-  .buscador-contenedor {
-    position: static;
-    transform: none;
-    margin-top: 10px;
-  }
-
-  .main-contenido {
-    padding: 20px 3%;
-  }
-
-  .contenedor-fotos {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .caja-foto {
-    width: 90%;
-    height: 150px;
-  }
-
-  .caja-descripcion {
-    width: 90%;
+  /* Ajustes específicos para el mapa en móviles */
+  .lista-mapa {
+    flex-direction: column; 
+    width: 80%; 
     margin: 0 auto;
-    min-height: 120px;
+    gap: 10px;
   }
-
-  .footer-principal {
-    flex-direction: column;
-    text-align: center;
-    padding: 15px 3%;
+  .caja-mapa {
+    width: 95%;
+    min-height: 350px; 
+    margin-top: 20px;
   }
-
-  .info-izquierda,
-  .info-derecha {
-    align-items: center;
-    margin-bottom: 10px;
-  }
-
-  .info-derecha {
-    text-align: center;
-  }
-  .contenedor-mapa {
-    width: 100%;
-    padding: 0 10px; 
-}
-
-.lista-mapa {
-  flex-direction: column; 
-  width: 80%; 
-  margin: 0 auto;
-  gap: 10px;
-}
-
-.caja-mapa {
-  width: 95%;
-  min-height: 350px; 
-  margin-top: 20px;
-}
 }
