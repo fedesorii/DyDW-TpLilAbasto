@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Funnel+Display:wght@400;700&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Funnel+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body class="body-general">
     <header class="header-principal">
       <div class="logo-contenedor">
-        <img src="Imagenes/Lilabasto_logo.jpeg" alt="Lil Abasto Logo" class="logo-imagen"/>
+        <img
+          src="Imagenes/Lilabasto_logo.jpeg"
+          alt="Lil Abasto Logo"
+          class="logo-imagen"
+        />
         <span class="logo-texto">Lil' Abasto</span>
       </div>
     </header>
@@ -21,8 +28,12 @@
     <!-- NavBar -->
     <nav id="NavBar">
       <div class="opciones-menu">
-        <button class="boton-menu" data-seccion="novedades">Novedades</button> <!-- Estos data-seccion son para que el js encuentre por ID y haga scroll suave-->
-        <button class="boton-menu" data-seccion="promociones">Promociones</button> <!-- asi no parece que hacemos una teleportacion corte DBZ-->
+        <button class="boton-menu" data-seccion="novedades">Novedades</button>
+        <!-- Estos data-seccion son para que el js encuentre por ID y haga scroll suave-->
+        <button class="boton-menu" data-seccion="promociones">
+          Promociones
+        </button>
+        <!-- asi no parece que hacemos una teleportacion corte DBZ-->
         <button class="boton-menu" data-seccion="mapa">Mapa</button>
         <button class="boton-menu" data-seccion="locales">Locales</button>
         <button class="boton-menu" data-seccion="servicios">Servicios</button>
@@ -36,17 +47,27 @@
     <main class="main-contenido">
       <div class="contenedor-fotos">
         <div class="caja-foto">
-          <img src="Imagenes/abasto_1.png" alt="Vista del flamante patio de comidas"/>
+          <img
+            src="Imagenes/abasto_1.png"
+            alt="Vista del flamante patio de comidas"
+          />
         </div>
         <div class="caja-foto">
-          <img src="Imagenes/abasto_2.png" alt="Vista de uno de los pasillos con negocios del shopping."/>
+          <img
+            src="Imagenes/abasto_2.png"
+            alt="Vista de uno de los pasillos con negocios del shopping."
+          />
         </div>
       </div>
 
       <!-- Caja descripción -->
       <div class="caja-descripcion">
         <p>
-          Ubicado en el corazón de Buenos Aires, Lil' Abasto combina la rica historia del tango con la modernidad de la vida urbana. Ofrecemos una experiencia de compras única, gastronomía de primer nivel y entretenimiento para toda la familia en un ambiente vibrante y acogedor.
+          Ubicado en el corazón de Buenos Aires, Lil' Abasto combina la rica
+          historia del tango con la modernidad de la vida urbana. Ofrecemos una
+          experiencia de compras única, gastronomía de primer nivel y
+          entretenimiento para toda la familia en un ambiente vibrante y
+          acogedor.
         </p>
       </div>
 
@@ -55,14 +76,29 @@
         <h2 class="titulo-seccion">NOVEDADES</h2>
         <div class="contenedor-novedades">
           <div class="caja-novedad">
-            <img src="Imagenes/exhibicion_padel_novedad2.jpg" alt="Exhibición de pádel en el shopping" />
+            <img
+              src="Imagenes/exhibicion_padel_novedad2.jpg"
+              alt="Exhibición de pádel en el shopping"
+            />
             <h3>¡Exhibición de Pádel!</h3>
-            <p>Vení a disfrutar de una increíble exhibición de pádel con jugadores profesionales en el corazón de nuestro shopping. ¡No te lo pierdas!</p>
+            <p>
+              Vení a disfrutar de una increíble exhibición de pádel con
+              jugadores profesionales en el corazón de nuestro shopping. ¡No te
+              lo pierdas!
+            </p>
           </div>
           <div class="caja-novedad" id="novedad-navidad">
-            <img src="Imagenes/navidad_abasto.jpg" alt="Escena de Navidad en el centro del shopping" />
+            <img
+              src="Imagenes/navidad_abasto.jpg"
+              alt="Escena de Navidad en el centro del shopping"
+            />
             <h3>¡Llegó la Magia de la Navidad!</h3>
-            <p>Ya podés visitar nuestra espectacular escena de Navidad. Sacate una foto con Papá Noel y viví el espíritu de las fiestas en Lil' Abasto.<p>
+            <p>
+              Ya podés visitar nuestra espectacular escena de Navidad. Sacate
+              una foto con Papá Noel y viví el espíritu de las fiestas en Lil'
+              Abasto.
+            </p>
+            <p></p>
           </div>
         </div>
       </section>
@@ -93,36 +129,111 @@
       <section id="mapa">
         <h2 class="titulo-seccion">MAPA DEL CENTRO COMERCIAL</h2>
         <div class="contenedor-mapa-interactivo">
-        <input type="radio" name="mapa-piso" id="mapa-subsuelo-radio" />
-        <input type="radio" name="mapa-piso" id="mapa-plantabaja-radio" checked />
-        <input type="radio" name="mapa-piso" id="mapa-primerpiso-radio" /> <!-- Estos radios tienen el mismo name para que solo uno se pueda seleccionar y son ocultos-->
-        <nav class="navegacion-mapa">
-          <ul class="lista-mapa">
-            <li><label for="mapa-subsuelo-radio" class="boton-mapa">Subsuelo</label></li> <!-- estos botones reales son labels conectadas a los radios con un for-->
-            <li><label for="mapa-plantabaja-radio" class="boton-mapa">Planta Baja</label></li>
-            <li><label for="mapa-primerpiso-radio" class="boton-mapa">Primer Piso</label></li>
-          </ul>
-        </nav>
+          <input type="radio" name="mapa-piso" id="mapa-subsuelo-radio" />
+          <input
+            type="radio"
+            name="mapa-piso"
+            id="mapa-plantabaja-radio"
+            checked
+          />
+          <input type="radio" name="mapa-piso" id="mapa-primerpiso-radio" />
+          <!-- Estos radios tienen el mismo name para que solo uno se pueda seleccionar y son ocultos-->
+          <nav class="navegacion-mapa">
+            <ul class="lista-mapa">
+              <li>
+                <label for="mapa-subsuelo-radio" class="boton-mapa"
+                  >Subsuelo</label
+                >
+              </li>
+              <!-- estos botones reales son labels conectadas a los radios con un for-->
+              <li>
+                <label for="mapa-plantabaja-radio" class="boton-mapa"
+                  >Planta Baja</label
+                >
+              </li>
+              <li>
+                <label for="mapa-primerpiso-radio" class="boton-mapa"
+                  >Primer Piso</label
+                >
+              </li>
+            </ul>
+          </nav>
 
           <div class="caja-mapa">
             <div id="mapa-plantabaja-contenedor" class="mapa-piso">
-              <img id="img-plantabaja" class="mapa-imagen" src="Imagenes/plantabaja.jpeg" alt="Imagen de la Planta Baja" />
-              <span class="punto-destacado" id="punto-adidas" style="top: 40%; left: 15%;"></span> <!-- estos span son cada local del mapa y se posicionan con "absolute" en el css-->
-              <span class="punto-destacado" id="punto-urbanstyle" style="top: 40%; left: 60%;"></span>
-              <span class="punto-destacado" id="punto-dexter" style="top: 75%; left: 35%;"></span>
-              <span class="punto-destacado" id="punto-columbia" style="top: 40%; left: 82%;"></span>
-              <span class="punto-destacado" id="punto-northface" style="top: 75%; left: 82%;"></span>
+              <img
+                id="img-plantabaja"
+                class="mapa-imagen"
+                src="Imagenes/plantabaja.jpeg"
+                alt="Imagen de la Planta Baja"
+              />
+              <span
+                class="punto-destacado"
+                id="punto-adidas"
+                style="top: 40%; left: 15%"
+              ></span>
+              <!-- estos span son cada local del mapa y se posicionan con "absolute" en el css-->
+              <span
+                class="punto-destacado"
+                id="punto-urbanstyle"
+                style="top: 40%; left: 60%"
+              ></span>
+              <span
+                class="punto-destacado"
+                id="punto-dexter"
+                style="top: 75%; left: 35%"
+              ></span>
+              <span
+                class="punto-destacado"
+                id="punto-columbia"
+                style="top: 40%; left: 82%"
+              ></span>
+              <span
+                class="punto-destacado"
+                id="punto-northface"
+                style="top: 75%; left: 82%"
+              ></span>
             </div>
             <div id="mapa-primerpiso-contenedor" class="mapa-piso">
-              <img id="img-primerpiso" class="mapa-imagen" src="Imagenes/pisouno.jpeg" alt="Imagen del Primer Piso" />
-              <span class="punto-destacado" id="punto-fravega" style="top: 40%; left: 18%;"></span>
-              <span class="punto-destacado" id="punto-fundalab" style="top: 40%; left: 35%;"></span>
-              <span class="punto-destacado" id="punto-timora" style="top: 40%; left: 58%;"></span>
-              <span class="punto-destacado" id="punto-fotografia" style="top: 75%; left: 58%;"></span>
-              <span class="punto-destacado" id="punto-tecnogreal" style="top: 75%; left: 82%;"></span>
+              <img
+                id="img-primerpiso"
+                class="mapa-imagen"
+                src="Imagenes/pisouno.jpeg"
+                alt="Imagen del Primer Piso"
+              />
+              <span
+                class="punto-destacado"
+                id="punto-fravega"
+                style="top: 40%; left: 18%"
+              ></span>
+              <span
+                class="punto-destacado"
+                id="punto-fundalab"
+                style="top: 40%; left: 35%"
+              ></span>
+              <span
+                class="punto-destacado"
+                id="punto-timora"
+                style="top: 40%; left: 58%"
+              ></span>
+              <span
+                class="punto-destacado"
+                id="punto-fotografia"
+                style="top: 75%; left: 58%"
+              ></span>
+              <span
+                class="punto-destacado"
+                id="punto-tecnogreal"
+                style="top: 75%; left: 82%"
+              ></span>
             </div>
             <div id="mapa-subsuelo-contenedor" class="mapa-piso">
-                <img id="img-subsuelo" class="mapa-imagen" src="Imagenes/subsuelo.jpeg" alt="Imagen del Subsuelo" />
+              <img
+                id="img-subsuelo"
+                class="mapa-imagen"
+                src="Imagenes/subsuelo.jpeg"
+                alt="Imagen del Subsuelo"
+              />
             </div>
           </div>
         </div>
@@ -135,13 +246,19 @@
           <div class="piso-contenedor">
             <h3 class="piso-titulo">Planta Baja</h3>
             <ul class="locales-lista">
-              <li data-local="adidas"> <!-- Estos "data-local" los usa el js para saber que local conectar con que punto en el mapa-->
+              <li data-local="adidas">
+                <!-- Estos "data-local" los usa el js para saber que local conectar con que punto en el mapa-->
                 <img src="Imagenes/adidas_logo.jpg" alt="Logo de Adidas" />
                 <div class="local-info">
                   <strong>Adidas</strong>
                   <p>Planta Baja - Local 130</p>
                 </div>
-                <a href="https://www.adidas.com.ar/" class="boton-local" target="_blank">Página Oficial</a>
+                <a
+                  href="https://www.adidas.com.ar/"
+                  class="boton-local"
+                  target="_blank"
+                  >Página Oficial</a
+                >
               </li>
               <li data-local="urbanstyle">
                 <img src="Imagenes/Logo-US.png" alt="Logo de Urban Style" />
@@ -149,7 +266,12 @@
                   <strong>Urban Style</strong>
                   <p>Planta Baja - Local 145</p>
                 </div>
-                <a href="https://fedesorii.github.io/DyDW-TP-UrbanStyle/" class="boton-local" target="_blank">Página Oficial</a>
+                <a
+                  href="https://fedesorii.github.io/DyDW-TpUrbanStyle/"
+                  class="boton-local"
+                  target="_blank"
+                  >Página Oficial</a
+                >
               </li>
               <li data-local="dexter">
                 <img src="Imagenes/dexter_logo.jpg" alt="Logo de Dexter" />
@@ -157,7 +279,12 @@
                   <strong>Dexter</strong>
                   <p>Planta Baja - Local 112</p>
                 </div>
-                <a href="https://dexter.com.ar/" class="boton-local" target="_blank">Página Oficial</a>
+                <a
+                  href="https://dexter.com.ar/"
+                  class="boton-local"
+                  target="_blank"
+                  >Página Oficial</a
+                >
               </li>
               <li data-local="columbia">
                 <img src="Imagenes/columbia_logo.png" alt="Logo de Columbia" />
@@ -165,15 +292,28 @@
                   <strong>Columbia Sportswear</strong>
                   <p>Planta Baja - Local 127</p>
                 </div>
-                <a href="https://www.columbiasportswear.com.ar/" class="boton-local" target="_blank">Página Oficial</a>
+                <a
+                  href="https://www.columbiasportswear.com.ar/"
+                  class="boton-local"
+                  target="_blank"
+                  >Página Oficial</a
+                >
               </li>
               <li data-local="northface">
-                <img src="Imagenes/northface_logo.png" alt="Logo de The North Face" />
+                <img
+                  src="Imagenes/northface_logo.png"
+                  alt="Logo de The North Face"
+                />
                 <div class="local-info">
                   <strong>The Northface</strong>
                   <p>Planta Baja - Local 102</p>
                 </div>
-                <a href="https://www.thenorthface.com.ar" class="boton-local" target="_blank">Página Oficial</a>
+                <a
+                  href="https://www.thenorthface.com.ar"
+                  class="boton-local"
+                  target="_blank"
+                  >Página Oficial</a
+                >
               </li>
             </ul>
           </div>
@@ -181,44 +321,75 @@
             <h3 class="piso-titulo">Primer Piso</h3>
             <ul class="locales-lista">
               <li data-local="fravega">
-                <img src="Imagenes/fravega_logo.jpg" alt="Logo de Fravega"/>
+                <img src="Imagenes/fravega_logo.jpg" alt="Logo de Fravega" />
                 <div class="local-info">
                   <strong>Fravega</strong>
                   <p>Primer Piso - Local 201</p>
                 </div>
-                <a href="https://www.fravega.com" class="boton-local" target="_blank">Página Oficial</a>
+                <a
+                  href="https://www.fravega.com"
+                  class="boton-local"
+                  target="_blank"
+                  >Página Oficial</a
+                >
               </li>
               <li data-local="fundalab">
-                <img src="Imagenes/FundaLab_Logo.jpg" alt="Logo de FundaLab"/>
+                <img src="Imagenes/FundaLab_Logo.jpg" alt="Logo de FundaLab" />
                 <div class="local-info">
                   <strong>FundaLab</strong>
                   <p>Primer Piso - Local 216</p>
                 </div>
-                <a href="https://eitangrod.github.io/Local-comercial/" class="boton-local" target="_blank">Página Oficial</a>
+                <a
+                  href="https://eitangrod.github.io/Local-comercial/"
+                  class="boton-local"
+                  target="_blank"
+                  >Página Oficial</a
+                >
               </li>
               <li data-local="timora">
-                <img src="Imagenes/Timora_Logo.jpg" alt="Logo de Timora"/>
+                <img src="Imagenes/Timora_Logo.jpg" alt="Logo de Timora" />
                 <div class="local-info">
                   <strong>Timora</strong>
                   <p>Primer Piso - Local 268</p>
                 </div>
-                <a href="https://dsket.github.io/Timora/index.html" class="boton-local" target="_blank">Página Oficial</a>
+                <a
+                  href="https://dsket.github.io/Timora/index.html"
+                  class="boton-local"
+                  target="_blank"
+                  >Página Oficial</a
+                >
               </li>
               <li data-local="fotografia">
-                <img src="Imagenes/Foto-Grafia_Logo.jpg" alt="Logo de Foto-Grafia"/>
+                <img
+                  src="Imagenes/Foto-Grafia_Logo.jpg"
+                  alt="Logo de Foto-Grafia"
+                />
                 <div class="local-info">
                   <strong>Foto-Grafia</strong>
                   <p>Primer Piso - Local 231</p>
                 </div>
-                <a href="https://awpii.github.io/WebDesign_UADE/" class="boton-local" target="_blank">Página Oficial</a>
+                <a
+                  href="https://awpii.github.io/WebDesign_UADE/"
+                  class="boton-local"
+                  target="_blank"
+                  >Página Oficial</a
+                >
               </li>
               <li data-local="tecnogreal">
-                <img src="Imagenes/TecnoGReal_Logo2.jpg" alt="Logo de Tecno G Real"/>
+                <img
+                  src="Imagenes/TecnoGReal_Logo2.jpg"
+                  alt="Logo de Tecno G Real"
+                />
                 <div class="local-info">
                   <strong>Tecno G Real</strong>
                   <p>Primer Piso - Local 247</p>
                 </div>
-                <a href="http://manugallina014.github.io/TPparcialDise-oWeb/" class="boton-local" target="_blank">Página Oficial</a>
+                <a
+                  href="http://manugallina014.github.io/TPparcialDise-oWeb/"
+                  class="boton-local"
+                  target="_blank"
+                  >Página Oficial</a
+                >
               </li>
             </ul>
           </div>
@@ -230,24 +401,42 @@
         <h2 class="titulo-seccion">SERVICIOS</h2>
         <div class="contenedor-servicios">
           <div class="caja-servicio">
-            <img src="Imagenes/estacionamiento.jpg" alt="Estacionamiento cubierto del shopping">
+            <img
+              src="Imagenes/estacionamiento.jpg"
+              alt="Estacionamiento cubierto del shopping"
+            />
             <div class="servicio-info">
               <h3>Estacionamiento</h3>
-              <p>Contamos con más de 1200 cocheras cubiertas. Las primeras 2 horas son sin cargo presentando tu ticket de compra.</p>
+              <p>
+                Contamos con más de 1200 cocheras cubiertas. Las primeras 2
+                horas son sin cargo presentando tu ticket de compra.
+              </p>
             </div>
           </div>
           <div class="caja-servicio">
-            <img src="Imagenes/baños.jpg" alt="Señalética de baños modernos y accesibles">
+            <img
+              src="Imagenes/baños.jpg"
+              alt="Señalética de baños modernos y accesibles"
+            />
             <div class="servicio-info">
               <h3>Baños y Sala Familiar</h3>
-              <p>Baños accesibles en todos los pisos y una sala de lactancia y cambiadores para tu comodidad.</p>
+              <p>
+                Baños accesibles en todos los pisos y una sala de lactancia y
+                cambiadores para tu comodidad.
+              </p>
             </div>
           </div>
           <div class="caja-servicio">
-            <img src="Imagenes/patio_comidas.png" alt="Patio de comidas del centro comercial">
+            <img
+              src="Imagenes/patio_comidas.png"
+              alt="Patio de comidas del centro comercial"
+            />
             <div class="servicio-info">
               <h3>Patio de Comidas</h3>
-              <p>Una amplia variedad de opciones gastronómicas para todos los gustos en nuestro renovado patio de comidas.</p>
+              <p>
+                Una amplia variedad de opciones gastronómicas para todos los
+                gustos en nuestro renovado patio de comidas.
+              </p>
             </div>
           </div>
         </div>
